@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: kubernetes-dashboard
-  name: kubernetes-dashboard
+  name: keirin-development-kdreams
 spec:
   replicas: 1
   selector:
