@@ -2,20 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: sample
-  name: sample
+    app: kubernetes-dashboard
+  name: kubernetes-dashboard
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sample
+      app: kubernetes-dashboard
   template:
     metadata:
       labels:
-        app: sample
+        app: kubernetes-dashboard
     spec:
       containers:
-      - name: sample
+      - name: kubernetes-dashboard
         image: nginx # This image url will be updated with kustomize
         resources:
           limits:
